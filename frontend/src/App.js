@@ -4,7 +4,7 @@ import {Container} from "react-bootstrap";
 import {HomeScreen} from "./screens/HomeScreen";
 import {Route, Routes} from 'react-router-dom'
 import {ProductScreen} from "./components/ProductScreen";
-import {AllRoutes} from "./AllRoutes";
+// import {AllRoutes} from "./AllRoutes";
 
 function App() {
     return (
