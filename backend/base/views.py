@@ -20,6 +20,7 @@ def get_products(request):
     products = Product.objects.all()
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
+    # return Response(products)
 
 
 @api_view(['GET'], )
