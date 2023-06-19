@@ -1,12 +1,9 @@
-from django.shortcuts import render
 from rest_framework.response import Response
 
-from .models import Product
-# from .products import products
-from django.http import JsonResponse
 from rest_framework.decorators import api_view
 
-from .serializers import ProductSerializer
+from base.models import Product
+from base.serializers import ProductSerializer
 
 
 @api_view(["GET"], )
