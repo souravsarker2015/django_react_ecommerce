@@ -5,6 +5,7 @@ import {HomeScreen} from "./screens/HomeScreen";
 import {Route, Routes} from 'react-router-dom'
 import {ProductScreen} from "./components/ProductScreen";
 import {CartScreen} from "./screens/CartScreen";
+import {LoginScreen} from "./screens/LoginScreen";
 
 // import {AllRoutes} from "./AllRoutes";
 
@@ -16,8 +17,9 @@ function App() {
                 <main className={"py-5"}>
                     <Routes>
                         <Route path="/" element={<HomeScreen/>}/>
-                        <Route path="product/:id" element={<ProductScreen/>}/>
-                        <Route path="cart/:id?" element={<CartScreen/>}/>
+                        <Route path="/login/" element={<LoginScreen/>}/>
+                        <Route path="/product/:id" element={<ProductScreen/>}/>
+                        <Route path="/cart/:id?" element={<CartScreen/>}/>
                     </Routes>
 
                 </main>
