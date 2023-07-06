@@ -24,8 +24,9 @@ export function ProfileScreen() {
     const {userInfo} = userLogin;
 
     const userUpdateProfile = useSelector(state => state.userUpdateProfile);
+    console.log('userUpdateProfile: ', userUpdateProfile)
     const {success} = userUpdateProfile;
-    console.log(success)
+    console.log('success: ', success)
     console.log(userUpdateProfile)
 
     useEffect(() => {
@@ -54,7 +55,8 @@ export function ProfileScreen() {
                 "name": name,
                 "email": email,
                 "password": password
-            }))
+            }));
+            setMessage("");
         }
     }
     return (
